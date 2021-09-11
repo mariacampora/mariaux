@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2100.984" height="1540.355" viewBox="0 0 2100.984 1540.355">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.048" y1="0.266" x2="0.814" y2="0.709" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fec93a"/>
+      <stop offset="0.103" stop-color="#fd521e"/>
+      <stop offset="0.34" stop-color="#fd4375"/>
+      <stop offset="0.552" stop-color="#1489ab"/>
+      <stop offset="0.749" stop-color="#39753d"/>
+      <stop offset="1" stop-color="#405284"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_72" data-name="Grupo 72" transform="matrix(0.921, -0.391, 0.391, 0.921, -269.441, 500.248)">
+    <path id="Unión_1" data-name="Unión 1" d="M1051.6,848a11,11,0,0,1-11-11V142.069a4,4,0,0,0-4-4H638.944a4,4,0,0,0-4,4V828.3H511.483V138.069H127.462a4,4,0,0,0-4,4V828.3H0V11.022a11,11,0,0,1,11-11H1050.9q.351-.022.708-.023h377.022V161.055H1165.636a4,4,0,0,0-4,4V698.832a4,4,0,0,0,4,4h634.67a4,4,0,0,0,4-4V512.766H1516.812V374.72h405.659V512.766h0V837a11,11,0,0,1-11,11Z" transform="translate(146.619 344.167)" fill="url(#linear-gradient)"/>
+    <ellipse id="Elipse_3" data-name="Elipse 3" cx="119" cy="118.5" rx="119" ry="118.5" transform="translate(1853.089 344.165)" fill="#39753d"/>
+  </g>
+</svg>
