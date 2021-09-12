@@ -106,7 +106,7 @@
   #msnContact,
   #emailContact,
   #nameContact {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 </style>

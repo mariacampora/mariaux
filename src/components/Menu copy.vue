@@ -45,14 +45,14 @@
           </div>
         </div>
         <b-navbar-nav class="d-block text-center mt-5">
-          <b-nav-item href="#home" data-scroll active>Inicio</b-nav-item>
+          <b-nav-item href="#home" data-scroll>Inicio</b-nav-item>
           <b-nav-item href="#about" data-scroll>Sobre mi</b-nav-item>
           <b-nav-item href="#proyect" data-scroll>Proyectos</b-nav-item>
           <b-nav-item href="#contact" data-scroll>Contáctame</b-nav-item>
           <b-nav-item href="#detail" data-scroll>Detalles</b-nav-item>
         </b-navbar-nav>
 
-        <ul class="social-icon mt-lg-auto ms-lg-0 d-flex">
+        <ul class="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
           <li>
             <a
               class="social-icon-linkedin"
@@ -114,14 +114,11 @@
 </template>
 <style lang="scss">
 #menu {
-  ul.navbar-nav > li > a.active:not(.btn) {
-    color: #FA521E;
+  .navbar-dark {
+    background: #123;
   }
-  .navbar-dark{
-    background: #123;;
-  }
-  .navbar-w{
-        max-width: 230px;
+  .navbar-w {
+    max-width: 230px;
   }
   .sidebar {
     max-width: 300px;
@@ -129,30 +126,32 @@
     .sidebar-header {
       margin: 80px 0 0 0;
     }
+    li.nav-link.active {
+        color: #fa521e;
+      }
   }
   .social-icon {
     list-style-type: none;
     position: absolute;
     bottom: 0;
-    a{
+    a {
       margin: 0 8px;
       color: rgba(255, 255, 255, 0.5);
       .svg-inline--fa {
         height: 2em;
-
       }
-      &:hover{
-        .fa-behance{
+      &:hover {
+        .fa-behance {
           color: #fff;
         }
-        .fa-instagram{
+        .fa-instagram {
           color: #c32aa3;
         }
-        .fa-facebook-f{
+        .fa-facebook-f {
           color: #3b5998;
         }
-        .fa-linkedin-in{
-          color:#007bb5;
+        .fa-linkedin-in {
+          color: #007bb5;
         }
       }
     }

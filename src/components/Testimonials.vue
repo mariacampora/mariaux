@@ -15,22 +15,23 @@
             las soluciones que hemos creado.
           </p>
         </b-col>
+
         <b-col lg="6" class="client p-4">
-          Trabajar con María fue una gran experiencia. Ella está acostumbrada a
-          trabajar de forma empoderada y con visión de crecimiento lo que le
-          permite asumir los proyectos en cualquier momento, sin importar su
-          magnitud y complejidad.
-          <div class="d-flex mt-5">
-            <b-img
-              src="../assets/client-6.jpg"
-              class="mr-4"
-              alt="Antonio Betancourt"
-            ></b-img>
-            <p>
-              Antonio Betancourt <br />
-              Scrum Master - Walmart
-            </p>
-          </div>
+          <p>
+                Trabajar con María fue una gran experiencia. Ella está
+                acostumbrada a trabajar de forma empoderada y con visión de
+                crecimiento lo que le permite asumir los proyectos en cualquier
+                momento, sin importar su magnitud y complejidad.
+          </p>
+                <div class="d-flex">
+                  <b-img
+                  src="../assets/client-6.jpg"
+                  class="mr-4 float-left"
+                  alt="Antonio Betancourt"
+                ></b-img>
+                Antonio Betancourt <br />
+                Scrum Master - Walmart
+                </div>
         </b-col>
       </b-row>
     </div>
@@ -54,7 +55,7 @@
 export default {
   name: "Testimonials",
   data: () => {
-    return {};
-  },
-};
+    return {}
+  }
+}
 </script>

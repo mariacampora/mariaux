@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Menu />
+    <Header />
     <router-view />
     <Footer />
   </div>
@@ -31,7 +31,7 @@ body {
 }
 </style>
 <script>
-import Menu from "./components/Menu.vue";
+import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 
 const WOW = require("wow.js/dist/wow.js");
@@ -40,7 +40,7 @@ let wow = new WOW();
 export default {
   name: "App",
   components: {
-    Menu,
+    Header,
     Footer,
   },
   mounted() {

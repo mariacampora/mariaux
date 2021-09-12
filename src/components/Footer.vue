@@ -26,9 +26,9 @@
   color: white;
   height: 90px;
   padding: 40px 40px 90px 280px;
-    @media (max-width: 991px) {
-      padding-left: 40px;
-    }
+  @media (max-width: 991px) {
+    padding-left: 40px;
+  }
   a {
     text-decoration: none;
     color: white;

@@ -15,7 +15,7 @@ import QueHago from "../components/QueHago.vue";
 import SobreMi from "../components/SobreMi.vue";
 import Proyect from "../components/Proyect.vue";
 import Formulario from "../components/Formulario.vue";
-import Testimonials from '../components/Testimonials.vue';
+import Testimonials from "../components/Testimonials.vue";
 
 export default {
   name: "Home",
@@ -25,10 +25,8 @@ export default {
     SobreMi,
     Proyect,
     Formulario,
-    Testimonials
+    Testimonials,
   },
-  data: () => {
-
-  },
+  data: () => {},
 };
 </script>
