@@ -1,80 +1,84 @@
 <template>
-  <section id="formulario">
-    <div class="bg-ligth p-5 fadeInUp wow" data-wow-duration="0.5s">
-      <b-row cols="1" cols-md="2" class="pt-3" align-v="center">
-        <b-col lg="6" class="">
-          <h2>
-            Diseño experiencia <br />
-            para los <s>usuarios</s>
-            <span class="text-principal">Personas</span>
-          </h2>
-          <p>
-            El UX es aplicable tanto a productos digitales, como: web, app,
-            interfaces… como a medios impresos: logos, manuales, pakaging,
-            revistas, folletos, gigantografias, banner, etc.
-          </p>
-        </b-col>
+  <section id="formulario" class="section">
+    <div class="container px-lg-5">
+      <div class="bg-ligth p-5 fadeInUp wow" data-wow-duration="0.5s">
+        <b-row cols="1" cols-md="2" class="pt-3" align-v="center">
+          <b-col lg="6" class="">
+            <h2>
+              Diseño experiencia <br />
+              para los <s>usuarios</s>
+              <span class="text-principal">Personas</span>
+            </h2>
+            <p>
+              El UX es aplicable tanto a productos digitales, como: web, app,
+              interfaces… como a medios impresos: logos, manuales, pakaging,
+              revistas, folletos, gigantografias, banner, etc.
+            </p>
+          </b-col>
 
-        <b-col lg="6" class="text-left">
-          <h3 class="text-principal">Envíame un mensaje!</h3>
-          <b-form-group
-            description=""
-            label="Nombre"
-            label-for="nameContact"
-            :invalid-feedback="invalidFeedbackName"
-            :valid-feedback="validFeedbackName"
-            :state="stateName"
-          >
-            <b-form-input
-              id="nameContact"
-              v-model="nombre"
-              trim
-              size="lg"
+          <b-col lg="6" class="text-left">
+            <h3 class="text-principal">Envíame un mensaje!</h3>
+            <b-form-group
+              description=""
+              label="Nombre"
+              label-for="nameContact"
+              :invalid-feedback="invalidFeedbackName"
+              :valid-feedback="validFeedbackName"
               :state="stateName"
-              @keyup="dirty.name = true"
-            ></b-form-input>
-          </b-form-group>
+            >
+              <b-form-input
+                id="nameContact"
+                v-model="nombre"
+                trim
+                size="lg"
+                :state="stateName"
+                @keyup="dirty.name = true"
+              ></b-form-input>
+            </b-form-group>
 
-          <b-form-group
-            description=""
-            label="Correo electrónico"
-            label-for="emailContact"
-            :invalid-feedback="invalidFeedbackEmail"
-            :valid-feedback="validFeedbackEmail"
-            :state="stateEmail"
-          >
-            <b-form-input
-              id="emailContact"
-              v-model="correo"
-              trim
-              size="lg"
+            <b-form-group
+              description=""
+              label="Correo electrónico"
+              label-for="emailContact"
+              :invalid-feedback="invalidFeedbackEmail"
+              :valid-feedback="validFeedbackEmail"
               :state="stateEmail"
-              @keyup="dirty.email = true"
-            ></b-form-input>
-          </b-form-group>
+            >
+              <b-form-input
+                id="emailContact"
+                v-model="correo"
+                trim
+                size="lg"
+                :state="stateEmail"
+                @keyup="dirty.email = true"
+              ></b-form-input>
+            </b-form-group>
 
-          <b-form-group>
-            <b-form-textarea
-              id="msnContact"
-              v-model="mensaje"
-              placeholder="Escribe tu mensaje..."
-              rows="4"
-              max-rows="8"
-            ></b-form-textarea>
-          </b-form-group>
+            <b-form-group>
+              <b-form-textarea
+                id="msnContact"
+                v-model="mensaje"
+                placeholder="Escribe tu mensaje..."
+                rows="4"
+                max-rows="8"
+              ></b-form-textarea>
+            </b-form-group>
 
-          <b-alert :variant="sentStatus" :show="sent"> Correo enviado </b-alert>
+            <b-alert :variant="sentStatus" :show="sent">
+              Correo enviado
+            </b-alert>
 
-          <b-button
-            pill
-            class="btn-enviar py-2 px-4"
-            :disabled="!stateEmail || !stateName"
-            @click="sendMessage()"
-          >
-            Enviar mensaje
-          </b-button>
-        </b-col>
-      </b-row>
+            <b-button
+              pill
+              class="btn-enviar py-2 px-4"
+              :disabled="!stateEmail || !stateName"
+              @click="sendMessage()"
+            >
+              Enviar mensaje
+            </b-button>
+          </b-col>
+        </b-row>
+      </div>
     </div>
   </section>
 </template>
@@ -87,9 +91,6 @@
   }
   .text-principal {
     color: #fd4375;
-  }
-  #msnContact {
-    height: 350px;
   }
   .btn-secondary {
     background: #fd4375;

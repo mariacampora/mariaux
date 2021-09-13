@@ -1,17 +1,37 @@
 <template>
   <div id="footer">
-    <div class="">
-      <div class="container-fluid fadeInUp wow" data-wow-duration="0.5s">
-        <b-row cols="1" cols-md="2" class="pt-3" align-v="center">
-          <b-col>
-            <p>
-              Copyright © 2021 - Todos los derechos reservados. <br />
-              Desarrollado por camporamaria@gmail.com
+    <div class="section bg-dark-1 text-muted">
+      <div class="container px-lg-5 fadeInUp wow" data-wow-duration="0.5s">
+        <b-row cols="1" cols-md="2" align-v="center">
+          <b-col class="text-center text-lg-start">
+            <p class="mb-3 mb-lg-0">
+              Copyright © 2021
+              <a href="/">Campora</a>
+              - Todos los derechos reservados. <br />
             </p>
           </b-col>
           <b-col class="text-right">
-            <a href="#">Aviso Legal</a> <br />
-            <a href="#">Política de privacidad</a>
+            <ul class="nav justify-content-center justify-content-lg-end">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#terms-policy"
+                  href="#"
+                  >Terms &amp; Policy |</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#disclaimer"
+                  href="#"
+                  >Disclaimer</a
+                >
+              </li>
+            </ul>
           </b-col>
         </b-row>
       </div>
@@ -20,19 +40,6 @@
 </template>
 <style lang="scss">
 #footer {
-  font-size: 12px;
-  margin-bottom: 0;
-  background-color: #123;
-  color: white;
-  height: 90px;
-  padding: 40px 40px 90px 280px;
-  @media (max-width: 991px) {
-    padding-left: 40px;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
 }
 </style>
 <script>

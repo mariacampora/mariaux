@@ -52,7 +52,14 @@
           <b-nav-item href="#detail" data-scroll>Detalles</b-nav-item>
         </b-navbar-nav>
 
-        <ul class="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
+        <ul
+          class="
+            social-icons social-icons-muted social-icons-sm
+            mt-lg-auto
+            ms-auto ms-lg-0
+            d-flex
+          "
+        >
           <li>
             <a
               class="social-icon-linkedin"
@@ -127,8 +134,8 @@
       margin: 80px 0 0 0;
     }
     li.nav-link.active {
-        color: #fa521e;
-      }
+      color: #fa521e;
+    }
   }
   .social-icon {
     list-style-type: none;
