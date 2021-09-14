@@ -1,10 +1,40 @@
 <template>
-  <section id="proyect" class="section">
+  <section id="proyect" class="section bg-light">
     <div class="container px-lg-5">
-      <h2>Proyectos en los que he participado</h2>
+      <!--Heading-->
+      <div class="position-relative d-flex text-center mb-5">
+        <h2
+          class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0"
+        >
+          Proyectos
+        </h2>
+        <p
+          class="
+            text-9
+            fw-500
+            position-absolute
+            w-100
+            align-self-center
+            lh-base
+            mb-0
+          "
+        >
+          Mi experiencia
+          <span
+            class="
+              heading-separator-line
+              border-bottom border-3 border-primary
+              d-block
+              mx-auto
+            "
+          ></span>
+        </p>
+      </div>
+      <!--Heading end-->
+
       <b-card
         sub-title="UX / DISEÑO DE PRODUCTO"
-        img-src="https://placekitten.com/1000/300"
+        img-src="../../assets/proyect/OAweb.jpg"
         img-alt="Card image"
         img-end
         img-width="50%"
@@ -42,15 +72,13 @@
 
       <b-card
         sub-title="INVESTIGACIÓN / DISEÑO DE PRODUCTO"
-        img-src="https://placekitten.com/1000/300"
+        img-src="../../assets/proyect/gobweb.jpg"
         img-alt="Card image"
         img-end
         img-width="50%"
         class="mb-3"
       >
-        <b-card-text class="mt-3">
-          Un intento de mejorar la comunicación entre la comunidad educativa.
-        </b-card-text>
+        <b-card-text class="mt-3"> Página web Oficial </b-card-text>
         <a
           href="https://www.behance.net/gallery/102971763/Website-Gobernacion"
           class="card-link"
@@ -62,7 +90,7 @@
         <b-button
           href="https://www.behance.net/campora"
           class="my-4 px-4 py-2"
-          variant="outline-info"
+          variant="info"
           pill
           target="_blank"
           rel=""

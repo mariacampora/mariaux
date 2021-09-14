@@ -1,5 +1,5 @@
 <template>
-  <section id="inicio">
+  <section id="cover">
     <div class="hero-content section d-flex fullscreen">
       <div class="container my-auto">
         <h1>UX/UI Design</h1>
@@ -21,7 +21,7 @@
   </section>
 </template>
 <style lang="scss">
-#inicio {
+#cover {
   h1 {
     font-size: 20px;
   }
@@ -45,10 +45,9 @@
 </style>
 <script>
 export default {
-  name: "Inicio",
+  name: "Cover",
   data: () => {
     return {};
   },
-  mounted: () => {},
 };
 </script>

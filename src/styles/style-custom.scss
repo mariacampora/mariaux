@@ -1,0 +1,54 @@
+.section {
+    position: relative;
+    padding: 4.5rem 0;
+    overflow: hidden;
+  }
+  .fullscreen {
+    min-height: 100vh !important;
+  }
+  .hero-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  .bg-dark {
+    background-color: #111418 !important;
+  }
+  .bg-dark-1 {
+    background-color: #212529 !important;
+  }
+  .bg-light{
+    background: #e6eaef;
+  }
+  .fw-600 {
+    font-weight: 600 !important;
+  }
+  .fw-500{
+    font-weight: 500 !important;
+  }
+  .text-5 {
+    font-size: 1.3125rem !important;
+  }
+  .text-9{
+    font-size: 2.25rem !important;
+  }
+  .text-24 {
+    font-size: calc(1.95rem + 5.4vw) !important;
+  }
+  .me-2 {
+    margin-right: 0.5rem !important;
+  }
+  .opacity-1 {
+    opacity: 0.06;
+  }
+  .border-primary {
+    border-color: $primary !important;
+  }
+  .heading-separator-line {
+    width: 80px;
+  }
+  .text-primary {
+    color: $primary !important;
+  }
+  .border-3{
+    border-width: 3px!important;
+  }

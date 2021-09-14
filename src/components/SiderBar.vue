@@ -1,5 +1,5 @@
 <template>
-  <div id="header" class="sticky-top">
+  <div id="siderbar" class="sticky-top">
     <b-navbar
       toggleable="lg"
       type="dark"
@@ -25,7 +25,6 @@
             class="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block"
           >
             <b-img
-              v-bind="mainProps"
               src="../assets/marca-maria.gif"
               rounded="circle"
               alt="marca personal"
@@ -114,7 +113,7 @@
   </div>
 </template>
 <style lang="scss">
-#header {
+#siderbar {
   .primary-menu {
     position: fixed;
     left: 0;
@@ -128,7 +127,40 @@
     z-index: 2;
     overflow: hidden;
     overflow-y: auto;
-    display: flex !important;
+    .social-icons {
+      margin: 0;
+      padding: 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      list-style: none;
+      li {
+        padding: 0;
+        overflow: visible;
+        width: 26px;
+        &:first-child {
+          margin-left: 0px;
+        }
+        a {
+          color: rgba(255, 255, 255, 0.5);
+          :hover {
+            &.fa-linkedin-in {
+              color: #007bb5;
+            }
+            &.fa-instagram {
+              color: #bc2a8d;
+            }
+            &.fa-behance {
+              color: #1769ff;
+            }
+            &.fa-facebook-f {
+              color: #3b5998;
+            }
+          }
+        }
+      }
+    }
   }
   @media (max-width: 991.98px) {
     .primary-menu {
@@ -138,38 +170,13 @@
       overflow: visible;
     }
   }
-  ul.social-icons {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none !important;
-    li {
-      padding: 0;
-      overflow: visible;
-      width: 26px;
-      &:first-child {
-        margin-left: 0px;
-      }
-      a {
-        color: rgba(255, 255, 255, 0.5);
-        :hover {
-          &.fa-linkedin-in {
-            color: #007bb5;
-          }
-          &.fa-instagram {
-            color: #bc2a8d;
-          }
-          &.fa-behance {
-            color: #1769ff;
-          }
-          &.fa-facebook-f {
-            color: #3b5998;
-          }
-        }
-      }
+  @media (min-width: 992px) {
+    .social-icons {
+      position: absolute;
+      bottom: 5px;
     }
   }
+
   .navbar-toggler {
     padding: 10px;
     border: none;
@@ -178,7 +185,7 @@
 </style>
 <script>
 export default {
-  name: "Header",
+  name: "SiderBar",
   data: () => {
     return {};
   },

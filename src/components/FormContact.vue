@@ -1,5 +1,5 @@
 <template>
-  <section id="formulario" class="section">
+  <section id="form_contact" class="section">
     <div class="container px-lg-5">
       <div class="bg-ligth p-5 fadeInUp wow" data-wow-duration="0.5s">
         <b-row cols="1" cols-md="2" class="pt-3" align-v="center">
@@ -82,8 +82,8 @@
     </div>
   </section>
 </template>
-<style lang="scss">
-#formulario {
+<style lang="scss" scoped>
+#form_contact {
   background-image: url("../../public/assets/mpt.png");
   background-color: #fd4375;
   .bg-ligth {
@@ -114,14 +114,14 @@
 <script>
 import axios from "axios";
 export default {
-  name: "Formulario",
+  name: "FormContact",
   data: () => {
     return {
       nombre: "",
       correo: "",
       mensaje: "",
       sent: false,
-      sentStatus: 0,
+      sentStatus: "success",
       dirty: {
         name: false,
         email: false,

@@ -1,13 +1,15 @@
 <template>
   <div id="home">
-    <Header />
+    <SiderBar />
     <div id="main-wrapper">
-      <Inicio />
-      <SobreMi />
-      <QueHago />
+      <Cover />
+      <About />
+      <WhatDo/>
       <Proyect />
       <Testimonials />
-      <Formulario />
+      <Call />
+      <FormContact />
+      <Footer />
     </div>
   </div>
 </template>
@@ -26,25 +28,31 @@
 </style>
 
 <script>
-import Header from "../components/Header.vue";
-import Inicio from "../components/Inicio.vue";
-import SobreMi from "../components/SobreMi.vue";
-import QueHago from "../components/QueHago.vue";
+import SiderBar from "../components/SiderBar.vue";
+import Cover from "../components/Cover.vue";
+import About from "../components/About.vue";
+import WhatDo from "../components/WhatDo.vue";
 import Proyect from "../components/Proyect.vue";
-import Formulario from "../components/Formulario.vue";
 import Testimonials from "../components/Testimonials.vue";
+import Call from "../components/Call.vue";
+import FormContact from "../components/FormContact.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
   components: {
-    Header,
-    Inicio,
-    SobreMi,
-    QueHago,
+    SiderBar,
+    Cover,
+    About,
+    WhatDo,
     Proyect,
-    Formulario,
     Testimonials,
+    Call,
+    FormContact,
+    Footer,
   },
-  data: () => {},
+  data: () => {
+    return {};
+  },
 };
 </script>

@@ -1,8 +1,38 @@
 <template>
-  <section id="quehago" class="section">
+  <section id="what_do" class="section">
     <div class="container px-lg-5">
+      <!--Heading-->
+      <div class="position-relative d-flex text-center mb-5">
+        <h2
+          class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0"
+        >
+          Servicios
+        </h2>
+        <p
+          class="
+            text-9
+            fw-500
+            position-absolute
+            w-100
+            align-self-center
+            lh-base
+            mb-0
+          "
+        >
+          ¿Qué hago?
+          <span
+            class="
+              heading-separator-line
+              border-bottom border-3 border-primary
+              d-block
+              mx-auto
+            "
+          ></span>
+        </p>
+      </div>
+      <!--Heading end-->
+
       <div class="text-center">
-        <h2>¿Qué hago?</h2>
         <p>
           UX es la experiencia que vive el usuario en el momento de interactuar
           con nuestro producto. Para lograr una buena experiencia debemos
@@ -30,8 +60,7 @@
   </section>
 </template>
 <style lang="scss">
-#quehago {
-  background: #ededed;
+#what_do {
   .img-process {
     width: 70%;
   }
@@ -39,7 +68,9 @@
 </style>
 <script>
 export default {
-  name: "QueHago",
-  data() {},
+  name: "WhatDo",
+  data: () => {
+    return {};
+  },
 };
 </script>

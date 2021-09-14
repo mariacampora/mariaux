@@ -15,6 +15,7 @@ import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(faPlayCircle);
@@ -26,14 +27,14 @@ library.add(faFileDownload);
 library.add(faPhotoVideo);
 library.add(faBars);
 library.add(faTimes);
+library.add(faChevronUp);
 
 Vue.component("fa-icon", FontAwesomeIcon);
 
 import { BootstrapVue, ImagePlugin } from "bootstrap-vue";
 
-// Import Bootstrap an BootstrapVue CSS files (order is important)
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
+// Mis SCSS
+import "./styles/style.scss";
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);

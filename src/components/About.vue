@@ -1,5 +1,5 @@
 <template>
-  <section id="sobremi" class="section bg-dark-1">
+  <section id="about" class="section bg-light">
     <div class="container px-lg-5">
       <!--Heading-->
       <div class="position-relative d-flex text-center mb-5">
@@ -8,23 +8,40 @@
         >
           Sobre mí
         </h2>
-        <p class=" text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">
-          CONÓCEME UN POCO MÁS
-          <span class=" heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span>
+        <p
+          class="
+            text-9
+            fw-500
+            position-absolute
+            w-100
+            align-self-center
+            lh-base
+            mb-0
+          "
+        >
+          Conóceme
+          <span
+            class="
+              heading-separator-line
+              border-bottom border-3 border-primary
+              d-block
+              mx-auto
+            "
+          ></span>
         </p>
       </div>
       <!--Heading end-->
       <div class="row gy-5">
-        <div class="col-lg-7 col-xl-8 text-center text-lg-start">
-          <h2 class="text-7 text-white fw-600 mb-3">
+        <div class="col-lg-7 col-xl-8 text-lg-start">
+          <h2 class="text-7 fw-500 mb-3">
             Soy <span class="text-primary">Maria Campora,</span> Diseñador UX
           </h2>
-          <p class="text-white-50">
+          <p>
             Me gusta investigar, observador, analizar, comprender el contexto y
             circunstancias del problema, definir hallazgos de valor que
             concluyan en el diseño de experiencias significativas.
           </p>
-          <p class="text-white-50">
+          <p>
             Estudie publicidad y mercadeo, diseño gráfico y actualmente diseño
             de experiencias. He participado en diversos proyectos de diseño y
             desarrollo de productos, me distingo por mi colaboración en trabajo
@@ -35,22 +52,22 @@
         </div>
         <div class="col-lg-5 col-xl-4">
           <div class="ps-lg-4">
-            <ul class="list-style-2 list-style-light text-light p-2">
-              <li><span class="fw-600 me-2">Nombres:</span> Maria Campora</li>
+            <ul class="list-style-2 list-style-light p-2">
+              <li><span class="me-2">Nombres:</span> Maria Campora</li>
               <li>
-                <span class="fw-600 me-2">Correo:</span
+                <span class="me-2">Correo:</span
                 ><a class="text-primary" href="mailto:camporamaria@gmail.com">
                   camporamaria@gmail.com</a
                 >
               </li>
               <li class="border-0">
-                <span class="fw-600 me-2">De:</span> Santiago, Chile
+                <span class="me-2">De:</span> Santiago, Chile
               </li>
             </ul>
             <b-button
               href="../../assets/ux_maria_campora.pdf"
               class="px-4 py-2 ml-2"
-              variant="outline-light"
+              variant="primary"
               pill
               target="_blank"
               rel=""
@@ -65,7 +82,7 @@
   </section>
 </template>
 <style lang="scss">
-#sobremi {
+#about {
   .list-style-2.list-style-light > li {
     border-bottom: 1px solid rgba(250, 250, 250, 0.12);
   }
@@ -80,7 +97,7 @@
 
 <script>
 export default {
-  name: "SobreMi",
+  name: "About",
   data: () => {
     return {};
   },
