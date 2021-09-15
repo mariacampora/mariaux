@@ -33,9 +33,9 @@
       <!--Heading end-->
 
       <b-card
-        sub-title="UX / DISEÑO DE PRODUCTO"
+        sub-title="UX / UI / DISEÑO WEB"
         img-src="../../assets/proyect/OAweb.jpg"
-        img-alt="Card image"
+        img-alt="Web Openagora"
         img-end
         img-width="50%"
         class="mb-3"
@@ -47,41 +47,47 @@
         <a
           href="https://www.behance.net/gallery/125285955/Website-Openagora"
           class="card-link"
+          target="_blank"
           >Ver caso de éxito</a
         >
       </b-card>
 
       <b-card
         sub-title="UX / DISEÑO WEB / BRANDING"
-        img-src="https://placekitten.com/1000/300"
-        img-alt="Card image"
+        img-src="../../assets/proyect/manual.jpg"
+        img-alt="Manual Openagora"
         img-end
         img-width="50%"
         class="mb-3"
       >
         <b-card-text class="mt-3">
-          Software para firma digital Herramienta para realizar firmas
-          electrónicas y digitales de documentos.
+          Diseño de marca, resultante de la investigación de usuario expuesta en
+          el proyecto anterior de Openagora.
         </b-card-text>
         <a
           href="https://www.behance.net/gallery/125266059/Manual-de-marca-Openagora"
           class="card-link"
+          target="_blank"
           >Ver caso de éxito</a
         >
       </b-card>
 
       <b-card
-        sub-title="INVESTIGACIÓN / DISEÑO DE PRODUCTO"
+        sub-title="UX / UI / DISEÑO WEB"
         img-src="../../assets/proyect/gobweb.jpg"
-        img-alt="Card image"
+        img-alt="Web Gobernación"
         img-end
         img-width="50%"
         class="mb-3"
       >
-        <b-card-text class="mt-3"> Página web Oficial </b-card-text>
+        <b-card-text class="mt-3">
+          Diseño y desarrollo de la nueva página web oficial de la Gobernación
+          del estado Bolívar.</b-card-text
+        >
         <a
           href="https://www.behance.net/gallery/102971763/Website-Gobernacion"
           class="card-link"
+          target="_blank"
           >Ver caso de éxito</a
         >
       </b-card>

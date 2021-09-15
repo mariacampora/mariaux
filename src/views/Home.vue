@@ -4,7 +4,7 @@
     <div id="main-wrapper">
       <Cover />
       <About />
-      <WhatDo/>
+      <WhatDo />
       <Proyect />
       <Testimonials />
       <Call />
