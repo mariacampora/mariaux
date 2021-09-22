@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="section bg-light">
+  <section id="about" class="section bg-light wow slideInLeft">
     <div class="container px-lg-5">
       <!--Heading-->
       <div class="position-relative d-flex text-center mb-5">
@@ -53,7 +53,8 @@
         <div class="col-lg-5 col-xl-4">
           <div class="ps-lg-4">
             <ul class="list-style-2 list-style-light p-2">
-              <li><span class="me-2">Nombres:</span> Maria Campora</li>
+              <li><span class="me-2">Nombres:</span> Maria de los Angeles</li>
+              <li><span class="me-2">Apellidos:</span> Cámpora Cordova</li>
               <li>
                 <span class="me-2">Correo:</span
                 ><a class="text-primary" href="mailto:camporamaria@gmail.com">

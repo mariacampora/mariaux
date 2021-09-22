@@ -15,26 +15,36 @@
           flex-lg-column
           ps-3
           px-lg-3
-          pt-lg-3
+          pt-lg-5
           pb-lg-2
         "
       >
         <!-- Logo -->
-        <a href="index.html" class="mb-lg-auto mt-lg-4">
-          <span
-            class="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block"
-          >
-            <b-img
-              src="../assets/marca-maria.gif"
-              rounded="circle"
-              alt="marca personal"
-              class="img-fluid rounded-pill d-block"
-            ></b-img>
-          </span>
-          <h1 class="text-5 text-white text-center mb-0 d-lg-block">
-            Maria Campora
-          </h1>
-        </a>
+        <div class="sidebar-header mt-lg-5">
+          <a href="index.html" class="mb-lg-auto mt-lg-5">
+            <span
+              class="
+                bg-dark-2
+                rounded-pill
+                p-2
+                mb-lg-1
+                d-none d-lg-inline-block
+              "
+            >
+              <b-img
+                src="../assets/marca-maria.gif"
+                rounded="circle"
+                alt="marca personal"
+                width="110"
+                class="img-fluid rounded-pill d-block"
+              ></b-img>
+            </span>
+            <h1 class="text-5 text-white text-center mb-0 d-lg-block">
+              Maria Campora
+              <small>UX/UI Designer</small>
+            </h1>
+          </a>
+        </div>
         <!-- Logo End -->
 
         <ul class="social-icons mt-lg-auto ms-auto ms-lg-0 d-flex">
@@ -96,16 +106,17 @@
             <fa-icon v-else :icon="['fas', 'bars']" />
           </template>
         </b-navbar-toggle>
+
         <b-collapse id="navbar-toggle-collapse" class="w-100 my-lg-auto" is-nav>
           <b-navbar-nav
-            v-b-scrollspy:scrollspy-nested
             class="flex-column text-lg-center w-100"
+            v-b-scrollspy
           >
-            <b-nav-item href="#home">Inicio</b-nav-item>
+            <b-nav-item href="#cover">Inicio</b-nav-item>
             <b-nav-item href="#about">Sobre mi</b-nav-item>
-            <b-nav-item href="#proyect">Proyectos</b-nav-item>
-            <b-nav-item href="#contact">Contáctame</b-nav-item>
-            <b-nav-item href="#detail">Detalles</b-nav-item>
+            <b-nav-item href="#what_do">¿Qué hago?</b-nav-item>
+            <b-nav-item href="#portfolio">Portafolio</b-nav-item>
+            <b-nav-item href="#form_contact">Contáctame</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </div>
@@ -114,6 +125,15 @@
 </template>
 <style lang="scss">
 #siderbar {
+  .nav-link.active {
+    color: #40B726;
+    cursor: pointer;
+  }
+  .sidebar-header {
+    padding-bottom: 60px;
+    padding-bottom: 24px;
+    text-align: center;
+  }
   .primary-menu {
     position: fixed;
     left: 0;
@@ -181,6 +201,12 @@
     padding: 10px;
     border: none;
   }
+  nav li:hover,
+  nav li.router-link-active,
+  nav li.router-link-exact-active {
+    color: indianred;
+    cursor: pointer;
+  }
 }
 </style>
 <script>
@@ -188,6 +214,18 @@ export default {
   name: "SiderBar",
   data: () => {
     return {};
+  },
+  methods: {
+    // Convenience method to scroll a heading into view.
+    // Not required for scrollspy to work
+    scrollIntoView(event) {
+      event.preventDefault();
+      const href = event.target.getAttribute("href");
+      const el = href ? document.querySelector(href) : null;
+      if (el) {
+        this.$refs.content.scrollTop = el.offsetTop;
+      }
+    },
   },
 };
 </script>

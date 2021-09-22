@@ -560,7 +560,11 @@
     </div>
   </div>
 </template>
+<style lang="scss">
+#footer {
 
+}
+</style>
 <script>
 export default {
   name: "Footer",

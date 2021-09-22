@@ -5,7 +5,8 @@
       <Cover />
       <About />
       <WhatDo />
-      <Proyect />
+      <Resume />
+      <Portfolio />
       <Testimonials />
       <Call />
       <FormContact />
@@ -32,11 +33,15 @@ import SiderBar from "../components/SiderBar.vue";
 import Cover from "../components/Cover.vue";
 import About from "../components/About.vue";
 import WhatDo from "../components/WhatDo.vue";
-import Proyect from "../components/Proyect.vue";
+import Resume from "../components/Resume.vue";
+import Portfolio from "../components/Portfolio.vue";
 import Testimonials from "../components/Testimonials.vue";
 import Call from "../components/Call.vue";
 import FormContact from "../components/FormContact.vue";
 import Footer from "../components/Footer.vue";
+
+const WOW = require("wow.js/dist/wow.js");
+let wow = new WOW();
 
 export default {
   name: "Home",
@@ -45,7 +50,8 @@ export default {
     Cover,
     About,
     WhatDo,
-    Proyect,
+    Resume,
+    Portfolio,
     Testimonials,
     Call,
     FormContact,
@@ -53,6 +59,9 @@ export default {
   },
   data: () => {
     return {};
+  },
+  mounted() {
+    wow.init();
   },
 };
 </script>

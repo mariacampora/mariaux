@@ -1,11 +1,12 @@
 <template>
-  <div id="app">
-    <router-view />
-  </div>
+  <div id="resume"></div>
 </template>
 <style lang="scss"></style>
 <script>
 export default {
-  name: "App",
+  name: "Resume",
+  data: () => {
+    return {};
+  },
 };
 </script>

@@ -16,6 +16,12 @@ import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFileImage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(faPlayCircle);
@@ -27,19 +33,27 @@ library.add(faFileDownload);
 library.add(faPhotoVideo);
 library.add(faBars);
 library.add(faTimes);
+library.add(faChevronDown);
+library.add(faHome);
+library.add(faUserCircle);
+library.add(faBriefcase);
+library.add(faEnvelope);
+library.add(faFileImage);
 library.add(faChevronUp);
 
 Vue.component("fa-icon", FontAwesomeIcon);
 
-import { BootstrapVue, ImagePlugin } from "bootstrap-vue";
+import { BootstrapVue, ImagePlugin, VBScrollspyPlugin } from "bootstrap-vue";
 
 // Mis SCSS
 import "./styles/style.scss";
+import "animate.css";
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(ImagePlugin);
+Vue.use(VBScrollspyPlugin);
 
 new Vue({
   router,
