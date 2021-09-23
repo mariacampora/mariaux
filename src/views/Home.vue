@@ -6,6 +6,7 @@
       <About />
       <WhatDo />
       <Resume />
+      <Skill />
       <Portfolio />
       <Testimonials />
       <Call />
@@ -34,6 +35,7 @@ import Cover from "../components/Cover.vue";
 import About from "../components/About.vue";
 import WhatDo from "../components/WhatDo.vue";
 import Resume from "../components/Resume.vue";
+import Skill from "../components/Skill.vue";
 import Portfolio from "../components/Portfolio.vue";
 import Testimonials from "../components/Testimonials.vue";
 import Call from "../components/Call.vue";
@@ -51,6 +53,7 @@ export default {
     About,
     WhatDo,
     Resume,
+    Skill,
     Portfolio,
     Testimonials,
     Call,

@@ -6,7 +6,7 @@
           <b-col lg="6" class="">
             <h2>
               Diseño experiencia <br />
-              para los <s>usuarios</s>
+              para los <s class="mr-2"> usuarios</s>
               <span class="text-principal">Personas</span>
             </h2>
             <p>
@@ -90,7 +90,7 @@
     background-color: #eae8ed;
   }
   .text-principal {
-    color: #fd4375;
+    color: #1289aa;
   }
   .btn-secondary {
     background: #fd4375;
@@ -102,7 +102,7 @@
   }
 
   span {
-    font-family: "Indie Flower", cursive;
+    font-family: 'Architects Daughter', cursive;
   }
   #msnContact,
   #emailContact,

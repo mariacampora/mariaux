@@ -32,198 +32,7 @@
       </div>
       <!--Heading end-->
 
-      <!--Filtro-->
-
-      <b-nav align="center">
-        <b-nav-item data-filter=".ui" active>Active</b-nav-item>
-        <b-nav-item data-filter=".ui">Link</b-nav-item>
-        <b-nav-item data-filter=".brand">Another Link</b-nav-item>
-        <b-nav-item data-filter=".rrss" active>Active</b-nav-item>
-        <b-nav-item data-filter=".editorial">Link</b-nav-item>
-        <b-nav-item data-filter=".*">Another Link</b-nav-item>
-      </b-nav>
-
-      <ul
-        class="
-          portfolio-menu
-          nav nav-tabs nav-light
-          justify-content-center
-          border-bottom-0
-          mb-5
-        "
-      >
-        <li class="nav-item">
-          <a data-filter=".ux" href="" class="nav-link active">UX</a>
-        </li>
-        <li class="nav-item">
-          <a data-filter=".ui" href="" class="nav-link">UI</a>
-        </li>
-        <li class="nav-item">
-          <a data-filter=".brand" href="" class="nav-link">Brand</a>
-        </li>
-        <li class="nav-item">
-          <a data-filter=".rrss" href="" class="nav-link">Social Media</a>
-        </li>
-        <li class="nav-item">
-          <a data-filter=".editorial" href="" class="nav-link">Editorial</a>
-        </li>
-        <li class="nav-item">
-          <a data-filter="*" class="nav-link" href="">Todo</a>
-        </li>
-      </ul>
-      <!--Filtro end-->
-
       <!--portfolio-->
-      <b-card-group columns> </b-card-group>
-
-      <div class="portfolio popup-ajax-gallery">
-        <div
-          class="row portfolio-filter g-4"
-          style="position: relative; height: 1094.62px"
-        >
-          <div
-            class="col-sm-6 col-lg-4 brand"
-            style="position: absolute; left: 0px; top: 0px"
-          >
-            <div class="portfolio-box rounded">
-              <div class="portfolio-img rounded">
-                <img class="img-fluid d-block" src="" alt="" />
-                <div class="portfolio-overlay">
-                  <a
-                    class="popup-ajax stretched-link"
-                    href="ajax/portfolio-ajax-project-dark-1.html"
-                  ></a>
-                  <div class="portfolio-overlay-details">
-                    <h5 class="text-white fw-400">Project Title</h5>
-                    <span class="text-light">Category</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-sm-6 col-lg-4 design"
-            style="position: absolute; left: 416px; top: 0px"
-          >
-            <div class="portfolio-box rounded">
-              <div class="portfolio-img rounded">
-                <img class="img-fluid d-block" src="" alt="" />
-                <div class="portfolio-overlay">
-                  <a
-                    class="popup-ajax stretched-link"
-                    href="ajax/portfolio-ajax-project-dark-2.html"
-                  ></a>
-                  <div class="portfolio-overlay-details">
-                    <h5 class="text-white fw-400">Project Title</h5>
-                    <span class="text-light">Category</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-sm-6 col-lg-4 artwork photos"
-            style="position: absolute; left: 832px; top: 0px"
-          >
-            <div class="portfolio-box rounded">
-              <div class="portfolio-img rounded">
-                <img class="img-fluid d-block" src="" alt="" />
-                <div class="portfolio-overlay">
-                  <a
-                    class="popup-ajax stretched-link"
-                    href="ajax/portfolio-ajax-project-dark-3.html"
-                  ></a>
-                  <div class="portfolio-overlay-details">
-                    <h5 class="text-white fw-400">Project Title</h5>
-                    <span class="text-light">Category</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-sm-6 col-lg-4 artwork brand photos"
-            style="position: absolute; left: 0px; top: 285.156px"
-          >
-            <div class="portfolio-box rounded">
-              <div class="portfolio-img rounded">
-                <img class="img-fluid d-block" src="" alt="" />
-                <div class="portfolio-overlay">
-                  <a
-                    class="popup-ajax stretched-link"
-                    href="ajax/portfolio-ajax-project-dark-4.html"
-                  ></a>
-                  <div class="portfolio-overlay-details">
-                    <h5 class="text-white fw-400">Project Title</h5>
-                    <span class="text-light">Category</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-sm-6 col-lg-4 design"
-            style="position: absolute; left: 832px; top: 285.156px"
-          >
-            <div class="portfolio-box rounded">
-              <div class="portfolio-img rounded">
-                <img class="img-fluid d-block" src="" alt="" />
-                <div class="portfolio-overlay">
-                  <a
-                    class="popup-ajax stretched-link"
-                    href="ajax/portfolio-ajax-project-dark-5.html"
-                  ></a>
-                  <div class="portfolio-overlay-details">
-                    <h5 class="text-white fw-400">Project Title</h5>
-                    <span class="text-light">Category</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-sm-6 col-lg-4 brand"
-            style="position: absolute; left: 832px; top: 570.312px"
-          >
-            <div class="portfolio-box rounded">
-              <div class="portfolio-img rounded">
-                <img class="img-fluid d-block" src="" alt="" />
-                <div class="portfolio-overlay">
-                  <a
-                    class="popup-ajax stretched-link"
-                    href="ajax/portfolio-ajax-project-dark-6.html"
-                  ></a>
-                  <div class="portfolio-overlay-details">
-                    <h5 class="text-white fw-400">Project Title</h5>
-                    <span class="text-light">Category</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-sm-6 col-lg-4 design photos"
-            style="position: absolute; left: 416px; top: 678.625px"
-          >
-            <div class="portfolio-box rounded">
-              <div class="portfolio-img rounded">
-                <img class="img-fluid d-block" src="" alt="" />
-                <div class="portfolio-overlay">
-                  <a
-                    class="popup-ajax stretched-link"
-                    href="ajax/portfolio-ajax-project-dark-7.html"
-                  ></a>
-                  <div class="portfolio-overlay-details">
-                    <h5 class="text-white fw-400">Project Title</h5>
-                    <span class="text-light">Category</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <b-card
         sub-title="UX / UI / DISEÑO WEB"
         img-src="../../assets/proyect/OAweb.jpg"
@@ -307,6 +116,34 @@
   .card-subtitle {
     margin: 5px 0 10px 0;
     font-size: 0.7em;
+  }
+  ::selection {
+    background:  #FD521D;
+  }
+  .portfolio .portfolio-box {
+    position: relative;
+    .portfolio-img {
+      position: relative;
+      overflow: hidden;
+      img {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .portfolio-overlay {
+      text-align: center;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 </style>

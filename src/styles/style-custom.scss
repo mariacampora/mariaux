@@ -47,7 +47,10 @@
   opacity: 0.06;
 }
 .border-primary {
-  border-color: $primary !important;
+  border-color: $enfasis !important;
+}
+.text-color{
+  color: $enfasis;
 }
 .heading-separator-line {
   width: 80px;
@@ -58,9 +61,7 @@
 .border-3{
   border-width: 3px!important;
 }
-a.nav-link:active{
-  color:red;
-}
+
 @media (min-width: 1200px) {
   .text-16 {
     font-size: 4rem !important;

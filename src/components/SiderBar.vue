@@ -19,33 +19,33 @@
           pb-lg-2
         "
       >
-        <!-- Logo -->
+        <!-- avatar -->
         <div class="sidebar-header mt-lg-5">
           <a href="index.html" class="mb-lg-auto mt-lg-5">
             <span
               class="
                 bg-dark-2
                 rounded-pill
-                p-2
+                p-1
                 mb-lg-1
                 d-none d-lg-inline-block
               "
             >
               <b-img
-                src="../assets/marca-maria.gif"
+                src="../assets/avatar.jpg"
                 rounded="circle"
                 alt="marca personal"
-                width="110"
+                width="150"
                 class="img-fluid rounded-pill d-block"
               ></b-img>
             </span>
-            <h1 class="text-5 text-white text-center mb-0 d-lg-block">
-              Maria Campora
-              <small>UX/UI Designer</small>
-            </h1>
           </a>
+          <h1 class="text-5 text-white text-center mb-0 d-lg-block">
+            Maria Campora
+          </h1>
+          <small class="text-complementario fw-500">UX/UI Designer</small>
         </div>
-        <!-- Logo End -->
+        <!-- avatar fin-->
 
         <ul class="social-icons mt-lg-auto ms-auto ms-lg-0 d-flex">
           <li class="social-icons-linkedin">
@@ -108,10 +108,7 @@
         </b-navbar-toggle>
 
         <b-collapse id="navbar-toggle-collapse" class="w-100 my-lg-auto" is-nav>
-          <b-navbar-nav
-            class="flex-column text-lg-center w-100"
-            v-b-scrollspy
-          >
+          <b-navbar-nav class="flex-column text-lg-center w-100" v-b-scrollspy>
             <b-nav-item href="#cover">Inicio</b-nav-item>
             <b-nav-item href="#about">Sobre mi</b-nav-item>
             <b-nav-item href="#what_do">¿Qué hago?</b-nav-item>
@@ -126,8 +123,11 @@
 <style lang="scss">
 #siderbar {
   .nav-link.active {
-    color: #40B726;
+    color:  #FD521D;
     cursor: pointer;
+  }
+  .text-complementario {
+    color: #1289aa;
   }
   .sidebar-header {
     padding-bottom: 60px;
@@ -200,12 +200,6 @@
   .navbar-toggler {
     padding: 10px;
     border: none;
-  }
-  nav li:hover,
-  nav li.router-link-active,
-  nav li.router-link-exact-active {
-    color: indianred;
-    cursor: pointer;
   }
 }
 </style>

@@ -562,7 +562,6 @@
 </template>
 <style lang="scss">
 #footer {
-
 }
 </style>
 <script>

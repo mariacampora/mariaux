@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="section bg-light wow slideInLeft">
+  <section id="about" class="section bg-light">
     <div class="container px-lg-5">
       <!--Heading-->
       <div class="position-relative d-flex text-center mb-5">
@@ -34,7 +34,7 @@
       <div class="row gy-5">
         <div class="col-lg-7 col-xl-8 text-lg-start">
           <h2 class="text-7 fw-500 mb-3">
-            Soy <span class="text-primary">Maria Campora,</span> Diseñador UX
+            Soy <span class="text-color">Maria Campora,</span> Diseñador UX
           </h2>
           <p>
             Me gusta investigar, observador, analizar, comprender el contexto y
@@ -73,8 +73,8 @@
               target="_blank"
               rel=""
             >
+              <fa-icon :icon="['fas', 'download']" class="mr-2" />
               Descargar CV
-              <fa-icon :icon="['fas', 'file-download']" class="ml-2" />
             </b-button>
           </div>
         </div>
